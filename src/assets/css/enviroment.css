@@ -1,8 +1,11 @@
 :root {
   --cv-bg-white: #ffffff;
+  --cv-bg-white2: #e0e0e0;
   --cv-bg-gray: #666666;
   --cv-bg-pink: #E70FAA;
   --cv-bg-lightBlue: #00C0FD;
+
+  --cv-bg-darkMode: #061232;
 
   --cv-lg-blue: linear-gradient( -90deg, var(--cv-bg-pink) 0%, var(--cv-bg-lightBlue) 100%);
 }
@@ -12,4 +15,5 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'DMSans-Regular';
+  background: var(--cv-bg-darkMode);
 }

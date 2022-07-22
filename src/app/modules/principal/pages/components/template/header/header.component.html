@@ -1,0 +1,24 @@
+<header>
+    <div class="icon-web">
+        <img src="/assets/images/resources/logo.svg" alt="dev-un1t7d">
+    </div>
+    <nav>
+        <ul *ngFor="let menu of menuNav">
+            <li *ngIf="menu.path">
+                <div class="item-menu" (click)="activeMenu(menu.name!)">
+                    <a [routerLink]="[menu.path]">{{menu.name}}</a>
+                    <div class="hover-selected" [ngClass]="{'hover-selected-active': menu.active}"></div>
+                </div>
+            </li>
+            <li *ngIf="!menu.path">
+                <ul *ngFor="let subMenu of menu.child">
+                    <li>
+                        <a [href]=subMenu.path target="_blank">
+                            <img src="/assets/images/resources/header/{{subMenu.img}}.svg" [alt]=subMenu.alt>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>

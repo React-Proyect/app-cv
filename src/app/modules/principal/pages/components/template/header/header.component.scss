@@ -20,7 +20,7 @@ header {
 
   nav {
     ul {
-      display: flex;
+      display: inline-flex;
       justify-content: center;
       align-items: center;
       li {
@@ -38,8 +38,13 @@ header {
           a {
             text-align: center;
             text-decoration: none;
-            color: var(--cv-bg-gray);
+            color: var(--cv-bg-white);
             font-family: "DMSans-Medium";
+          }
+
+          .hover-selected-active {
+            width: 100%;
+            transition: 0.5s;
           }
 
           &:hover {
@@ -53,6 +58,20 @@ header {
           margin-left: -20px;
           li {
             margin: 0 10px 0 10px;
+            a {
+              padding: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              box-sizing: border-box;
+              border-radius: 50%;
+              &:hover {
+                background: var(--cv-lg-blue);
+              }
+              img {
+                width: 20px;
+              }
+            }
           }
         }
       }
