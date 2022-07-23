@@ -16,6 +16,13 @@
           text-align: left;
           span{
             display: block;
+            &.my-name{
+              background: var(--cv-lg-blue);
+              -webkit-text-fill-color: transparent;
+              color: var(--cv-lg-blue);
+              -webkit-background-clip: text;
+              font-size: 95px;
+            }
           }
         }
       }
@@ -40,6 +47,7 @@
           height: 100%;
           background-image: url(../../../../../assets/images/resources/home/avatar.webp);
           background-size: cover;
+          background-repeat: no-repeat;
           background-position-x: -7rem;
           filter: grayscale(100%);
         }
