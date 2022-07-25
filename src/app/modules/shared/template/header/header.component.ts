@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { HeaderNav } from '../domain/header-nav';
 
 @Component({
@@ -21,27 +21,27 @@ export class HeaderComponent implements OnInit {
       {
         name: 'Home',
         path: '/',
-        active: false
+        active: window.location.pathname === '/' ? true : false
       },
       {
         name: 'About',
         path: 'about',
-        active: false
+        active: window.location.pathname === '/about' ? true : false
       },
       {
         name: 'Tech Stack',
         path: 'technologies',
-        active: false
+        active: window.location.pathname === '/technologies' ? true : false
       },
       {
         name: 'Projects',
         path: 'projects',
-        active: false
+        active: window.location.pathname === '/projects' ? true : false
       },
       {
         name: 'Contact',
         path: 'contact',
-        active: false
+        active: window.location.pathname === '/contact' ? true : false
       },
       {
         child:
@@ -70,4 +70,8 @@ export class HeaderComponent implements OnInit {
     this.menuNav.forEach((menuElement) => menuElement.name === menu ? menuElement.active = true : menuElement.active = false);
   }
 
+  /* @HostListener('window:scroll', []) onWindowScroll() {
+    const verticalOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+  } */
 }

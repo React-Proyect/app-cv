@@ -9,6 +9,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ResourcesModule } from '../shared/resources/resources.module';
 import { TemplateModule } from '../shared/template/template.module';
+import { TechStackComponent } from './components/tech-stack/tech-stack.component';
+import { ProjectStackComponent } from './components/project-stack/project-stack.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { TemplateModule } from '../shared/template/template.module';
     TechnologiesComponent,
     ProjectsComponent,
     ContactComponent,
+    TechStackComponent,
+    ProjectStackComponent,
   ],
   imports: [
     CommonModule,

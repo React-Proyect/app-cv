@@ -1,0 +1,17 @@
+.cv-tech-stack {
+  padding: 2rem 0rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}

@@ -2,12 +2,25 @@
   --cv-bg-white: #ffffff;
   --cv-bg-white2: #e0e0e0;
   --cv-bg-gray: #666666;
-  --cv-bg-pink: #E70FAA;
-  --cv-bg-lightBlue: #00C0FD;
-
+  --cv-bg-pink: #e70faa;
+  --cv-bg-lightBlue: #00c0fd;
+  --cv-bg-dark: #363636;
+  
   --cv-bg-darkMode: #061232;
 
-  --cv-lg-blue: linear-gradient( -90deg, var(--cv-bg-pink) 0%, var(--cv-bg-lightBlue) 100%);
+  --cv-lg-blue: linear-gradient(
+    -90deg,
+    var(--cv-bg-pink) 0%,
+    var(--cv-bg-lightBlue) 100%
+  );
+  --cv-lg-blue2: linear-gradient(
+    0deg,
+    var(--cv-bg-pink) 0%,
+    var(--cv-bg-lightBlue) 100%
+  );
+
+  --cv-bs-pink: 0px 0px 10px var(--cv-bg-pink);
+  --cv-bs-lightBlue: 0px 0px 10px var(--cv-bg-lightBlue);
 }
 
 body {
@@ -16,4 +29,21 @@ body {
   box-sizing: border-box;
   font-family: 'DMSans-Regular';
   background: var(--cv-bg-darkMode);
+  overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: var(--cv-bg-darkMode);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--cv-lg-blue2);
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #00c0fd;
+  cursor: pointer;
+}
+

@@ -5,7 +5,7 @@
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    padding: 10rem 0rem;
+    padding: 10rem 0rem 5rem 0rem;
 
     .description {
       .greeting {
@@ -14,9 +14,9 @@
           font-family: "DMSans-Bold";
           color: var(--cv-bg-white);
           text-align: left;
-          span{
+          span {
             display: block;
-            &.my-name{
+            &.my-name {
               background: var(--cv-lg-blue);
               -webkit-text-fill-color: transparent;
               color: var(--cv-lg-blue);
@@ -40,6 +40,7 @@
         border: solid 1rem var(--cv-lg-blue);
         box-sizing: border-box;
         background: var(--cv-lg-blue);
+        animation: AvatarGradientBoxShadow 5s infinite;
 
         .img-avatar {
           border-radius: 50%;
@@ -50,8 +51,20 @@
           background-repeat: no-repeat;
           background-position-x: -7rem;
           filter: grayscale(100%);
+          transition: .5s;
+        }
+
+        &:hover > .img-avatar{
+          filter: none;
+          transition: .5s;
         }
       }
     }
+  }
+
+  .my-tach-stack, 
+  .my-projects{
+    width: 100%;
+    padding: 5rem 0rem 5rem 0rem;
   }
 }

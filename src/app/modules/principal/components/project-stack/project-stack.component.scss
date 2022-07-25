@@ -1,0 +1,53 @@
+.cv-project-stack {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .item-card {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background: var(--cv-bg-white);
+    padding: 1rem;
+    box-sizing: border-box;
+    .card {
+      width: 100%;
+      display: block;
+      border-radius: 20px;
+      overflow: hidden;
+      .card-header {
+        height: 250px;
+        background: var(--cv-lg-blue);
+        overflow: hidden;
+        img {
+          height: 100%;
+        }
+      }
+      .card-body {
+        height: 300px;
+        background: var(--cv-bg-dark);
+        padding: 1rem;
+        box-sizing: border-box;
+        color: var(--cv-bg-white);
+        .title {
+          h4 {
+            font-size: 1.5rem;
+            line-height: 0;
+            text-align: center;
+          }
+        }
+        .description {
+          p {
+            font-size: 1rem;
+          }
+        }
+        .preview {
+            display: block;
+        }
+      }
+    }
+  }
+}

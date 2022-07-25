@@ -10,6 +10,9 @@ header {
   padding-right: 10vw;
   padding-left: 10vw;
   box-sizing: border-box;
+  background: var(--cv-bg-darkMode);
+  animation: HeaderGradientBoxShadow 5s infinite;
+  z-index: 99;
 
   .icon-web {
     width: auto;

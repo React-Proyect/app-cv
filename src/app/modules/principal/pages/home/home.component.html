@@ -1,20 +1,31 @@
-<div class="cv-home">
+<div class="cv-home" @fadeInOnEnter>
     <div class="my-profil">
         <div class="description">
             <div class="greeting">
                 <h1>
-                    <span>HOLA 👋  ,</span>
+                    <span>HOLA 👋 ,</span>
                     <span>MI NOMBRE ES</span>
-                    <span class="my-name">KEVIN AQUINO</span>
+                    <span class="my-name">##### ######</span><!-- KEVIN AQUINO -->
                     <span>Y CONSTRUYO SITIOS WEB</span>
                 </h1>
             </div>
         </div>
         <div class="avatar">
-            <div class="gradient-box">
-                <div class="img-avatar"></div>
-            </div>
+            <a [routerLink]="['/']">
+                <div class="gradient-box">
+                    <div class="img-avatar"></div>
+                </div>
+            </a>
         </div>
     </div>
-    <app-header-title></app-header-title>
+    <div class="my-tach-stack">
+        <app-header-title [position]="'center'" [title]="'Tech Stack'"
+            [subTitle]="'Tecnologías con las que trabajo recientemente'"></app-header-title>
+        <app-tech-stack></app-tech-stack>
+    </div>
+    <div class="my-projects">
+        <app-header-title [position]="'center'" [title]="'Proyectos'" [subTitle]="'Los desarrollos construidos'">
+        </app-header-title>
+        <app-project-stack></app-project-stack>
+    </div>
 </div>

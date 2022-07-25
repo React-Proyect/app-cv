@@ -1,0 +1,24 @@
+.cv-up-button {
+  position: fixed;
+  bottom: -10vh;
+  right: 5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--cv-bg-lightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .8s;
+  box-shadow: var(--cv-bs-lightBlue);
+  i{
+      color: var(--cv-bg-white);
+    }
+
+  &:hover{
+      background: var(--cv-bg-pink);
+      box-shadow: var(--cv-bs-pink);
+      transition: .8s;
+      cursor: pointer;
+  }
+}

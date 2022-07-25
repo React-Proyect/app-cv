@@ -6,13 +6,13 @@ import { HeaderTitleComponent } from './header-title/header-title.component';
 
 @NgModule({
   declarations: [
-    HeaderTitleComponent
+    HeaderTitleComponent,
   ],
   imports: [
     CommonModule
   ],
-  exports:[
-    HeaderTitleComponent
+  exports: [
+    HeaderTitleComponent,
   ]
 })
 export class ResourcesModule { }

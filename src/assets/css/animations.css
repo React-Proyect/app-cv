@@ -1,0 +1,23 @@
+@keyframes AvatarGradientBoxShadow {
+  0% {
+    box-shadow: 0px 0px 10px var(--cv-bg-lightBlue);
+  }
+  50% {
+    box-shadow: 0px 0px 10px var(--cv-bg-pink);
+  }
+  100% {
+    box-shadow: 0px 0px 10px var(--cv-bg-lightBlue);
+  }
+}
+
+@keyframes HeaderGradientBoxShadow {
+  0% {
+    box-shadow: 0px 0px 5px var(--cv-bg-lightBlue);
+  }
+  50% {
+    box-shadow: 0px 0px 5px var(--cv-bg-pink);
+  }
+  100% {
+    box-shadow: 0px 0px 5px var(--cv-bg-lightBlue);
+  }
+}

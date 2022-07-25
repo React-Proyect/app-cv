@@ -1,0 +1,7 @@
+<div class="cv-tech-stack">
+    <div class="item" *ngFor="let techStack of techSatckList">
+        <a [href]=techStack.href target="_blank">
+            <img src="/assets/images/resources/tech-stack/{{techStack.name}}.svg" [alt]="techStack.alt">
+        </a>
+    </div>
+</div>
