@@ -3,14 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 
   .item-card {
-    width: 80%;
+    width: 70%;
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    background: var(--cv-bg-white);
     padding: 1rem;
     box-sizing: border-box;
     .card {
@@ -27,6 +26,7 @@
         }
       }
       .card-body {
+        position: relative;
         height: 300px;
         background: var(--cv-bg-dark);
         padding: 1rem;
@@ -44,9 +44,27 @@
             font-size: 1rem;
           }
         }
-        .preview {
-            display: block;
+        .tech-stack {
+          display: block;
+          div {
+            display: inline-flex;
+          }
         }
+
+        .preview {
+          position: absolute;
+          bottom: 1rem;
+          a {
+            text-decoration: none;
+            color: var(--cv-bg-white);
+          }
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        animation: AvatarGradientBoxShadow 5s infinite;
+        transition: 5s;
       }
     }
   }

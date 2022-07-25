@@ -1,25 +1,29 @@
 <div class="cv-project-stack">
     <div class="item-card">
-        <div class="card">
+        <div class="card" *ngFor="let project of projectStackList">
             <div class="card-header">
                 <a href="">
-                    <img src="../../../../../assets/images/resources/projects/mundoterrenos.png" alt="">
+                    <img [src]="project.image" [alt]=project.alt>
                 </a>
             </div>
             <div class="card-body">
                 <div class="title">
-                    <h4>Nombre del proyecto</h4>
+                    <h4>{{project.name}}</h4>
                 </div>
                 <div class="description">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ea officiis tenetur sunt
-                        obcaecati rerum quidem iusto sapiente perspiciatis amet asperiores minus dolores labore illo
-                        sed? Voluptas ipsam molestiae nulla?
+                        {{project.description}}
                     </p>
                 </div>
-                <div class="preview">
+                <div class="tech-stack">
                     <span>Tecnologías: </span>
-                    <span>Tecnologías</span>
+                    <div *ngFor="let tech of project.tech">
+                        <span>{{tech}}</span>
+                    </div>
+                </div>
+                <div class="preview">
+                    <a [href]="project.site" target="_blank"><i class="fas fa-link"></i> Pagina web:
+                        {{project.nameSite}}</a>
                 </div>
             </div>
         </div>
