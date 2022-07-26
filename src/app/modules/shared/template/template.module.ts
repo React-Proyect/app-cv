@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { RouterModule } from '@angular/router';
 import { UpButtonComponent } from './up-button/up-button.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -11,7 +12,8 @@ import { UpButtonComponent } from './up-button/up-button.component';
   declarations: [
     HeaderComponent,
     MainComponent,
-    UpButtonComponent
+    UpButtonComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

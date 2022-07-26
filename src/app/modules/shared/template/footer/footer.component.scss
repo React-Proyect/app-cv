@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  //background: var(--cv-bg-white);
+  padding: 1rem 5rem;
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--cv-bg-dark);
+    .site-logo{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .contact-site{
+        color: var(--cv-bg-dark);
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .social-network{
+            ul{
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+  }
+}
