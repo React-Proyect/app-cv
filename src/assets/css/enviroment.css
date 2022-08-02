@@ -5,8 +5,9 @@
   --cv-bg-pink: #e70faa;
   --cv-bg-lightBlue: #00c0fd;
   --cv-bg-dark: #363636;
-  
+
   --cv-bg-darkMode: #061232;
+  --cv-bg-darkMode2: #03091b;
 
   --cv-lg-blue: linear-gradient(
     -90deg,
@@ -27,7 +28,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'DMSans-Regular';
+  font-family: "DMSans-Regular";
   background: var(--cv-bg-darkMode);
   overflow-x: hidden;
 }
@@ -46,4 +47,3 @@ body::-webkit-scrollbar-thumb:hover {
   background: #00c0fd;
   cursor: pointer;
 }
-

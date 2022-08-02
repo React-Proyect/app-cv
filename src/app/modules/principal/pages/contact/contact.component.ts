@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { fadeInOnEnterAnimation } from 'angular-animations';
 
 @Component({
@@ -11,9 +12,23 @@ import { fadeInOnEnterAnimation } from 'angular-animations';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  formContact: FormGroup;
+
+  constructor(private _builder: FormBuilder) {
+    this.formContact = this._builder.group({
+      name: ['', Validators.compose([Validators.required, Validators.minLength(4), Validators.maxLength(30), Validators.pattern('^[a-zA-ZáéíóúÁÉÍÓÚ ]+$')])],
+      lastName: ['', Validators.compose([Validators.required, Validators.minLength(4), Validators.maxLength(30), Validators.pattern('^[a-zA-ZáéíóúÁÉÍÓÚ ]+$')])],
+      description: ['', Validators.compose([Validators.required, Validators.minLength(4), Validators.maxLength(30), Validators.pattern('^[a-zA-ZáéíóúÁÉÍÓÚ ]+$')])],
+      email: ['', Validators.compose([Validators.required, Validators.minLength(4), Validators.maxLength(30), Validators.pattern('^[a-zA-ZáéíóúÁÉÍÓÚ ]+$')])]
+    });
+  }
 
   ngOnInit(): void {
   }
 
+
+  sendContact(data: any): void {
+  console.log("🚀 ~ file: contact.component.ts ~ line 31 ~ ContactComponent ~ sendContact ~ data", data)
+
+  }
 }

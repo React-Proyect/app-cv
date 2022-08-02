@@ -12,6 +12,9 @@ footer {
       display: flex;
       justify-content: start;
       align-items: center;
+      img{
+        width: 50%;
+      }
     }
     .contact-site {
       color: var(--cv-bg-white2);

@@ -11,6 +11,7 @@ import { ResourcesModule } from '../shared/resources/resources.module';
 import { TemplateModule } from '../shared/template/template.module';
 import { TechStackComponent } from './components/tech-stack/tech-stack.component';
 import { ProjectStackComponent } from './components/project-stack/project-stack.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProjectStackComponent } from './components/project-stack/project-stack.
     CommonModule,
     PrincipalRoutingModule,
     ResourcesModule,
-    TemplateModule
+    TemplateModule,
+    FormsModule
   ]
 })
 export class PrincipalModule { }

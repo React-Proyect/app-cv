@@ -49,17 +49,17 @@ export class HeaderComponent implements OnInit {
             {
               alt: 'icon-github',
               img: 'github',
-              path: '#',
+              path: 'https://github.com/UN1T7D',
             },
             {
               alt: 'icon-twitter',
               img: 'twitter',
-              path: '#',
+              path: 'https://twitter.com/UN1T7D',
             },
             {
               alt: 'icon-LinkedIn',
               img: 'linkedin',
-              path: '#',
+              path: 'https://www.linkedin.com/in/kevin-vasquez-46a0701b4/',
             }
           ]
       }
