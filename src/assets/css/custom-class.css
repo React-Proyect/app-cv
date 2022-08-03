@@ -1,8 +1,15 @@
 .cv-container-page {
-  width: 100%;
-  height: auto;
-  margin-top: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-gradient-blueLight {
+    background: var(--cv-lg-blue);
+    -webkit-text-fill-color: transparent;
+    color: var(--cv-lg-blue);
+    -webkit-background-clip: text;
 }

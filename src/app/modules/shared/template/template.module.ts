@@ -9,19 +9,19 @@ import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    MainComponent,
-    UpButtonComponent,
-    FooterComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
-  exports:[
-    HeaderComponent,
-    MainComponent
-  ]
+    declarations: [
+        HeaderComponent,
+        MainComponent,
+        UpButtonComponent,
+        FooterComponent,
+    ],
+    imports: [
+        CommonModule,
+        RouterModule
+    ],
+    exports: [
+        HeaderComponent,
+        MainComponent,
+    ]
 })
 export class TemplateModule { }

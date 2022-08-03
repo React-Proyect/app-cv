@@ -1,77 +1,89 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { HeaderNav } from '../domain/header-nav';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
 
-  menuNav: HeaderNav[] = [];
+    public menuNav: HeaderNav[] = [];
 
-  constructor() { }
+    @ViewChild('menuMobilModal') menuMobilModal: ElementRef | null = null;
 
-  ngOnInit(): void {
-    this._init();
-  }
 
-  _init(): void {
-    this.menuNav = [
-      {
-        name: 'Home',
-        path: '/',
-        active: window.location.pathname === '/' ? true : false
-      },
-      {
-        name: 'About',
-        path: 'about',
-        active: window.location.pathname === '/about' ? true : false
-      },
-      {
-        name: 'Tech Stack',
-        path: 'technologies',
-        active: window.location.pathname === '/technologies' ? true : false
-      },
-      {
-        name: 'Projects',
-        path: 'projects',
-        active: window.location.pathname === '/projects' ? true : false
-      },
-      {
-        name: 'Contact',
-        path: 'contact',
-        active: window.location.pathname === '/contact' ? true : false
-      },
-      {
-        child:
-          [
+    constructor() { }
+
+    ngOnInit(): void {
+        this._init();
+    }
+
+    _init(): void {
+        this.menuNav = [
             {
-              alt: 'icon-github',
-              img: 'github',
-              path: 'https://github.com/UN1T7D',
+                name: 'Home',
+                path: '/',
+                active: window.location.pathname === '/' ? true : false
             },
             {
-              alt: 'icon-twitter',
-              img: 'twitter',
-              path: 'https://twitter.com/UN1T7D',
+                name: 'About',
+                path: 'about',
+                active: window.location.pathname === '/about' ? true : false
             },
             {
-              alt: 'icon-LinkedIn',
-              img: 'linkedin',
-              path: 'https://www.linkedin.com/in/kevin-vasquez-46a0701b4/',
+                name: 'Tech Stack',
+                path: 'technologies',
+                active: window.location.pathname === '/technologies' ? true : false
+            },
+            {
+                name: 'Projects',
+                path: 'projects',
+                active: window.location.pathname === '/projects' ? true : false
+            },
+            {
+                name: 'Contact',
+                path: 'contact',
+                active: window.location.pathname === '/contact' ? true : false
+            },
+            {
+                child:
+                    [
+                        {
+                            alt: 'icon-github',
+                            img: 'github',
+                            path: 'https://github.com/UN1T7D',
+                        },
+                        {
+                            alt: 'icon-twitter',
+                            img: 'twitter',
+                            path: 'https://twitter.com/UN1T7D',
+                        },
+                        {
+                            alt: 'icon-LinkedIn',
+                            img: 'linkedin',
+                            path: 'https://www.linkedin.com/in/kevin-vasquez-46a0701b4/',
+                        }
+                    ]
             }
-          ]
-      }
-    ];
-  }
+        ];
+    }
 
-  activeMenu(menu: string) {
-    this.menuNav.forEach((menuElement) => menuElement.name === menu ? menuElement.active = true : menuElement.active = false);
-  }
+    activeMenu(menu: string) {
+        this.menuNav.forEach((menuElement) => menuElement.name === menu ? menuElement.active = true : menuElement.active = false);
+        this.closeMenuModal();
+    }
 
-  /* @HostListener('window:scroll', []) onWindowScroll() {
-    const verticalOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    openModal(): void {
+        const modal = this.menuMobilModal?.nativeElement;
+        modal.style.transition = "0.5s";
+        modal.style.transform = "translate(0vw)";
 
-  } */
+    }
+    closeMenuModal(): void {
+        const modal = this.menuMobilModal?.nativeElement;
+        modal.style.transition = "0.5s";
+        modal.style.transform = "translate(-100vw)";
+    }
+
 }
