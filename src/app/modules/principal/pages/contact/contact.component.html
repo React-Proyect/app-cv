@@ -1,61 +1,67 @@
 <div class="cv-contacts cv-container-page" @fadeInOnEnter>
-  <div class="contact">
-    <app-header-title
-      [position]="'left'"
-      [title]="'Me puedes contactar'"
-      [subTitle]="'Por medios de este formulario.'"
-    ></app-header-title>
-    <div class="body">
-      <form
-        class="form"
-        formGroup="formContact"
-        (submit)="sendContact(formContact.value)"
-      >
-        <div class="input-custom">
-          <label for="">Nombre:</label>
-          <input type="text" placeholder="Nombre" formControlName="name" />
-          <span></span>
+    <div class="contact">
+        <app-header-title
+            [position]="'left'"
+            [title]="'Me puedes contactar'"
+            [subTitle]="'Por medios de este formulario.'"
+        ></app-header-title>
+        <div class="body">
+            <form
+                class="form"
+                [formGroup]="formContact"
+                (submit)="sendContact(formContact.value)"
+            >
+                <div class="input-custom">
+                    <label for="">Nombre:</label>
+                    <input
+                        type="text"
+                        placeholder="Nombre"
+                        formControlName="name"
+                    />
+                    <span></span>
+                </div>
+                <div class="input-custom">
+                    <label for="">Apellido:</label>
+                    <input
+                        type="text"
+                        placeholder="Apellido"
+                        formControlName="lastName"
+                    />
+                    <span></span>
+                </div>
+                <div class="input-custom all">
+                    <label for="">Cuerpo del mensaje:</label>
+                    <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="5"
+                        placeholder="Descripción"
+                        formControlName="description"
+                    ></textarea>
+                    <span></span>
+                </div>
+                <div class="input-custom all">
+                    <label for="">Correo de contacto:</label>
+                    <input
+                        type="text"
+                        placeholder="email@gmail.com"
+                        formControlName="email"
+                    />
+                    <span></span>
+                </div>
+                <div class="button-custom all">
+                    <button type="submit" class="btn btn-lightBlue">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+            <div class="image-contact">
+                <img
+                    src="/assets/images/resources/contact/contact.svg"
+                    alt=""
+                />
+            </div>
         </div>
-        <div class="input-custom">
-          <label for="">Apellido:</label>
-          <input
-            type="text"
-            placeholder="Apellido"
-            formControlName="lastName"
-          />
-          <span></span>
-        </div>
-        <div class="input-custom all">
-          <label for="">Cuerpo del mensaje:</label>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="5"
-            placeholder="Descripción"
-            formControlName="description"
-          ></textarea>
-          <span></span>
-        </div>
-        <div class="input-custom all">
-          <label for="">Correo de contacto:</label>
-          <input
-            type="text"
-            placeholder="email@gmail.com"
-            formControlName="email"
-          />
-          <span></span>
-        </div>
-        <div class="button-custom all">
-          <button type="submit" class="btn btn-lightBlue">Enviar</button>
-        </div>
-      </form>
-      <div class="image-contact">
-        <img
-          src="../../../../../assets/images/resources/contact/contact.svg"
-          alt=""
-        />
-      </div>
     </div>
-  </div>
 </div>

@@ -8,36 +8,36 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { TechnologiesComponent } from './pages/technologies/technologies.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: MainComponent,
-    children: [
-      {
+    {
         path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'about',
-        component: AboutComponent
-      },
-      {
-        path: 'technologies',
-        component: TechnologiesComponent
-      },
-      {
-        path: 'projects',
-        component: ProjectsComponent
-      },
-      {
-        path: 'contact',
-        component: ContactComponent
-      }
-    ]
-  }
+        component: MainComponent,
+        children: [
+            {
+                path: '',
+                component: HomeComponent
+            },
+            {
+                path: 'about',
+                component: AboutComponent
+            },
+            {
+                path: 'technologies',
+                component: TechnologiesComponent
+            },
+            {
+                path: 'projects',
+                component: ProjectsComponent
+            },
+            {
+                path: 'contact',
+                component: ContactComponent
+            }
+        ]
+    }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
 })
 export class PrincipalRoutingModule { }
