@@ -28,4 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  -->
 
 #   APP CURRICULUM VITAE  U  HOJA DE VIDA
-ESTOS SON PASOS NECESARIOS PARA DESPLEGAR ESTA APLICACIÓN LOCALMENTE Y EN HEROKU
+Estos son pasos **necesarios** para desplegar esta aplicación localmente y en **Heroku**
+>    HEROKU
+-   Instalar la dependencia **npm i express path --save**
+-   Crear el archivo en la raíz del proyecto llamado **server.js**
+
