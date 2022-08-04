@@ -44,5 +44,7 @@ Estos son pasos **necesarios** para desplegar esta aplicación localmente y en *
         -   heroku-postbuild: ng build --prod
         -   start: node server.js
 
->   SERVER.JS :art: <br>
+>   server.js :art: <br>
 ![server.js](/src/assets/documentation/server.png "server.js")
+>   scripts.js :art: <br>
+![scripts.js](/src/assets/documentation/scripts.png "scripts.js")
