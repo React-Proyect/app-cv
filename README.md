@@ -33,5 +33,8 @@ Estos son pasos **necesarios** para desplegar esta aplicación localmente y en *
 -   Instalar la dependencia **npm i express path --save**
 -   Crear el archivo en la raíz del proyecto llamado **server.js**
 -   Agregar los siguiente en ese fichero
--   [server.js](/src/assets/documentation/server.png)
-
+-   ![server.js](/src/assets/documentation/server.png)
+-   Agregar las siguientes dependencias de desarrollo a las de producción:
+    -   typescript
+    -   @angular/compiler
+    -   @angular/compiler-cli
