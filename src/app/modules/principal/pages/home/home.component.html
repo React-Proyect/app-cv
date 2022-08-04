@@ -1,30 +1,39 @@
-<div class="cv-home" @fadeInOnEnter>
+<div class="cv-home container" @fadeInOnEnter>
     <div class="my-profil">
-        <div class="description">
-            <div class="greeting">
-                <h1>
-                    <span>HOLA 👋 ,</span>
-                    <span>MI NOMBRE ES</span>
-                    <span class="my-name">KEVIN AQUINO</span><!-- KEVIN AQUINO -->
-                    <span>Y CONSTRUYO SITIOS WEB</span>
-                </h1>
-            </div>
-        </div>
-        <div class="avatar">
-            <a [routerLink]="['/']">
-                <div class="gradient-box">
-                    <div class="img-avatar"></div>
+        <div class="columns">
+            <div class="description column">
+                <div class="greeting">
+                    <h1>
+                        <span>HOLA 👋 ,</span>
+                        <span>MI NOMBRE ES</span>
+                        <span class="my-name">KEVIN AQUINO</span>
+                        <span>Y CONSTRUYO SITIOS WEB</span>
+                    </h1>
                 </div>
-            </a>
+            </div>
+            <div class="avatar column">
+                <a [routerLink]="['/']">
+                    <div class="gradient-box">
+                        <div class="img-avatar"></div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="my-tach-stack">
-        <app-header-title [position]="'center'" [title]="'Tech Stack'"
-            [subTitle]="'Tecnologías con las que trabajo recientemente'"></app-header-title>
+        <app-header-title
+            [position]="'center'"
+            [title]="'Tech Stack'"
+            [subTitle]="'Tecnologías con las que trabajo recientemente'"
+        ></app-header-title>
         <app-tech-stack></app-tech-stack>
     </div>
     <div class="my-projects">
-        <app-header-title [position]="'center'" [title]="'Proyectos'" [subTitle]="'Los desarrollos construidos'">
+        <app-header-title
+            [position]="'center'"
+            [title]="'Proyectos'"
+            [subTitle]="'Los desarrollos construidos'"
+        >
         </app-header-title>
         <div class="projects">
             <app-project-stack></app-project-stack>

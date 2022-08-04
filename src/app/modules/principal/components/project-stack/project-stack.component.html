@@ -1,29 +1,33 @@
 <div class="cv-project-stack">
     <div class="item-card">
-        <div class="card" *ngFor="let project of projectStackList">
-            <div class="card-header">
-                <a href="">
-                    <img [src]="project.image" [alt]=project.alt>
-                </a>
-            </div>
-            <div class="card-body">
-                <div class="title">
-                    <h4>{{project.name}}</h4>
+        <div class="container-card" *ngFor="let project of projectStackList">
+            <div class="card">
+                <div class="card-header">
+                    <a href="">
+                        <img [src]="project.image" [alt]="project.alt" />
+                    </a>
                 </div>
-                <div class="description">
-                    <p>
-                        {{project.description}}
-                    </p>
-                </div>
-                <div class="tech-stack">
-                    <span>Tecnologías: </span>
-                    <div *ngFor="let tech of project.tech">
-                        <span>{{tech}}</span>
+                <div class="card-body">
+                    <div class="title">
+                        <h4>{{ project.name }}</h4>
                     </div>
-                </div>
-                <div class="preview">
-                    <a [href]="project.site" target="_blank"><i class="fas fa-link"></i> Pagina web:
-                        {{project.nameSite}}</a>
+                    <div class="description">
+                        <p>
+                            {{ project.description }}
+                        </p>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Tecnologías: </span>
+                        <div *ngFor="let tech of project.tech">
+                            <span>{{ tech }}</span>
+                        </div>
+                    </div>
+                    <div class="preview">
+                        <a [href]="project.site" target="_blank"
+                            ><i class="fas fa-link"></i> Pagina web:
+                            {{ project.nameSite }}</a
+                        >
+                    </div>
                 </div>
             </div>
         </div>

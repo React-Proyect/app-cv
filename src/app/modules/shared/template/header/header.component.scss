@@ -1,7 +1,5 @@
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -11,7 +9,6 @@ header {
     padding-left: 10vw;
     box-sizing: border-box;
     background: var(--cv-bg-darkMode);
-    animation: HeaderGradientBoxShadow 5s infinite;
     z-index: 99;
 
     .menu-mobil-modal {
@@ -100,7 +97,7 @@ header {
                     ul {
                         margin-left: -20px;
                         li {
-                            margin: 0 5px 0 5px;
+                            margin: 0 10px 0 10px;
                         }
                     }
                 }
@@ -166,7 +163,7 @@ header {
                         .item-menu {
                             a {
                                 font-family: "DMSans-Medium";
-                                font-size: 3rem;
+                                font-size: 2.5rem;
                             }
                         }
                         ul {

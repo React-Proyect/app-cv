@@ -32,6 +32,7 @@ body {
     font-family: "DMSans-Regular";
     background: var(--cv-bg-darkMode);
     overflow-x: hidden;
+    display: flex;
 }
 
 body::-webkit-scrollbar {
