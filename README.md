@@ -32,8 +32,6 @@ Estos son pasos **necesarios** para desplegar esta aplicación localmente y en *
 >    HEROKU
 -   Instalar la dependencia **npm i express path --save**
 -   Crear el archivo en la raíz del proyecto llamado **server.js**
-<!-- -   Agregar los siguiente en ese fichero -->
-<!-- -   ![server.js](/src/assets/documentation/server.png) -->
 -   El archivo **package.json** , haremos lo siguiente: 
     -   Agregar las siguientes dependencias de desarrollo a las de producción:
         -   typescript
@@ -45,3 +43,6 @@ Estos son pasos **necesarios** para desplegar esta aplicación localmente y en *
     -   En el apartado de los **scripts** agregar el siguiente script:
         -   heroku-postbuild: ng build --prod
         -   start: node server.js
+
+>   RECURSOS
+![server.js](/src/assets/documentation/server.png)
