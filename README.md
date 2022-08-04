@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 #   APP CURRICULUM VITAE  U  HOJA DE VIDA
 Estos son pasos **necesarios** para desplegar esta aplicación localmente y en **Heroku**
->    HEROKU
+>    HEROKU 🚀 
 -   Instalar la dependencia **npm i express path --save**
 -   Crear el archivo en la raíz del proyecto llamado **server.js**
 -   El archivo **package.json** , haremos lo siguiente: 
@@ -44,5 +44,5 @@ Estos son pasos **necesarios** para desplegar esta aplicación localmente y en *
         -   heroku-postbuild: ng build --prod
         -   start: node server.js
 
->   RECURSOS
+>   RECURSOS :art:
 ![server.js](/src/assets/documentation/server.png)
