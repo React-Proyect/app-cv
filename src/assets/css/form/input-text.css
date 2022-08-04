@@ -1,48 +1,48 @@
 .input-custom {
-  width: 100%;
+    width: 100%;
 }
 
 .input-custom label,
 .input-custom span {
-  display: block;
-  color: var(--cv-bg-white);
-  opacity: 0.5;
+    display: block;
+    color: var(--cv-bg-white);
+    opacity: 0.5;
 }
 .input-custom input,
 .input-custom textarea {
-  display: block;
-  width: 100%;
-  border: none;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-  box-sizing: border-box;
-  margin: 5px 0px;
-  outline: none;
-  color: var(--cv-bg-white);
-  font-family: "DMSans-Regular";
-  border-bottom: 1px solid var(--cv-bg-white);
-  background: transparent;
-  /* background: var(--cv-lg-blue); */
-  /* -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    margin: 2px 0px;
+    outline: none;
+    color: var(--cv-bg-white);
+    font-family: "DMSans-Regular";
+    border-bottom: 1px solid var(--cv-bg-white);
+    background: transparent;
+    /* background: var(--cv-lg-blue); */
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
    */
-  transition: 0.5s;
+    transition: 0.5s;
 }
 .input-custom input::placeholder,
 .input-custom textarea::placeholder {
-  /* background: var(--cv-bg-white); */
-  /* -webkit-text-fill-color: transparent;
+    /* background: var(--cv-bg-white); */
+    /* -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; */
 }
 .input-custom input:focus::placeholder,
 .input-custom textarea:focus::placeholder {
-  /*  background: var(--cv-bg-pink); */
-  opacity: 0.3;
-  /* -webkit-text-fill-color: transparent;
+    /*  background: var(--cv-bg-pink); */
+    opacity: 0.3;
+    /* -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; */
 }
 .input-custom input:focus,
 .input-custom textarea:focus {
-  transition: 0.5s;
-  /* border-bottom: 1px solid var(--cv-bg-pink); */
+    transition: 0.5s;
+    /* border-bottom: 1px solid var(--cv-bg-pink); */
 }

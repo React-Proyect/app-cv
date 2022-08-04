@@ -1,5 +1,11 @@
 .cv-projects {
-  .projects {
-    width: 100%;
-  }
+    .projects {
+        width: 100%;
+    }
+
+    @media screen and(max-width: 1024px) {
+        .projects {
+            padding-bottom: 5rem;
+        }
+    }
 }
