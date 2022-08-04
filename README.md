@@ -45,4 +45,5 @@ Estos son pasos **necesarios** para desplegar esta aplicación localmente y en *
         -   start: node server.js
 
 >   RECURSOS :art:
-![server.js](/src/assets/documentation/server.png)
+
+    ![server.js](/src/assets/documentation/server.png)
