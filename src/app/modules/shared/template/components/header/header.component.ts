@@ -1,6 +1,6 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { HeaderNavItem } from 'src/app/config/data/menu';
-import { HeaderNav } from '../domain/header-nav';
+import { HeaderNav } from '../../domain/header-nav';
 
 @Component({
     selector: 'app-header',

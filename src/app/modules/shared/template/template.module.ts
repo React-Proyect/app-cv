@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
 import { RouterModule } from '@angular/router';
-import { UpButtonComponent } from './up-button/up-button.component';
-import { FooterComponent } from './footer/footer.component';
+import { UpButtonComponent } from './components/up-button/up-button.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AlertComponent } from './components/alert/alert.component';
 
 
 
@@ -14,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
         MainComponent,
         UpButtonComponent,
         FooterComponent,
+        AlertComponent,
     ],
     imports: [
         CommonModule,

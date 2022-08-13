@@ -1,0 +1,26 @@
+.cv-alert {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.6rem;
+    bottom: 0;
+    background: var(--cv-bg-warning);
+    color: var(--cv-bg-white);
+    p {
+        text-align: center;
+        font-weight: 700;
+        a {
+            color: var(--cv-bg-white);
+        }
+    }
+    @media screen and(max-width: 768px) {
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+    @media screen and(max-width: 460px) {
+        padding: 0.2rem;
+        font-size: 0.7rem;
+    }
+}

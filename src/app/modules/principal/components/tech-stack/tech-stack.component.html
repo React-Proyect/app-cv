@@ -1,7 +1,17 @@
-<div class=" columns is-multiline | mt-5 | cv-tech-stack">
-    <div class="column is-variable is-3-desktop is-4-tablet is-4-mobile | is-flex is-justify-content-center is-align-items-center | item" *ngFor="let techStack of techSatckList">
-        <a [href]=techStack.href target="_blank">
-            <img src="/assets/images/resources/tech-stack/{{techStack.name}}.svg" [alt]="techStack.alt">
-        </a>
+<div class="columns is-multiline | mt-5 | cv-tech-stack">
+    <div
+        class="column is-variable is-3-desktop is-4-tablet is-4-mobile | is-flex is-justify-content-center is-align-items-center | item"
+        *ngFor="let techStack of techSatckList"
+    >
+        <div class="tech-stack">
+            <img
+                src="/assets/images/resources/tech-stack/{{ techStack.name }}.{{
+                    techStack.hasSvg ? 'svg' : 'png'
+                }}"
+                [alt]="techStack.alt"
+                appTippy
+                [label]="techStack.name"
+            />
+        </div>
     </div>
 </div>

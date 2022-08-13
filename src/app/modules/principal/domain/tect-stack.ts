@@ -1,5 +1,6 @@
-export interface TectStack {
+export interface TechStack {
     name: string,
     alt: string,
-    href: string
+    href: string,
+    hasSvg: boolean
 }
