@@ -46,5 +46,6 @@ Estos son pasos **necesarios** para desplegar esta aplicación localmente y en *
 
 >   server.js :art: <br>
 ![server.js](/src/assets/documentation/server.png "server.js")
+
 >   scripts.js :art: <br>
 ![scripts.js](/src/assets/documentation/scripts.png "scripts.js")
