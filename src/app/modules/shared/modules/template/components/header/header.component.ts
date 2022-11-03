@@ -1,5 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import { HeaderNavItem } from 'src/app/config/data/menu';
+import { HeaderNavItem } from '../../../../data/menu';
 import { HeaderNav } from '../../domain/header-nav';
 
 @Component({
@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
     @HostListener('window:scroll', []) onWindowScroll(): void {
         const verticalOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
         const upButton = this.headerNav?.nativeElement;
-        if (verticalOffset > 200) {
+        if (verticalOffset > 400) {
             upButton.style.position = 'fixed';
             upButton.style.top = '0';
             upButton.style.left = '0';

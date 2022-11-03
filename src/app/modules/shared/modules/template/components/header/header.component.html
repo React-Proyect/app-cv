@@ -1,6 +1,6 @@
 <header #headerNav>
     <div class="icon-web">
-        <img src="/assets/images/resources/logo.png" alt="dev-un1t7d" />
+        <img routerLink="/" src="/assets/images/resources/logo.png" alt="dev-un1t7d" />
     </div>
     <nav>
         <ul *ngFor="let menu of menuNav">
@@ -50,7 +50,7 @@
                     </div>
                 </li>
                 <li *ngIf="!menu.path">
-                    <ul >
+                    <ul>
                         <li *ngFor="let subMenu of menu.child">
                             <a [href]="subMenu.path" target="_blank">
                                 <img
